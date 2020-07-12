@@ -12,7 +12,7 @@ export function getLineMarkers(arg: string): number[] {
     return [0, parseInt(arg[1])];
   }
 
-  throw "Error getting line marker: " + arg
+  throw new Error("Error getting line marker: " + arg)
 }
 
 export function checkLCPArgs(args: string[]): boolean {
