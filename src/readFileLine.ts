@@ -15,11 +15,11 @@ export function fileLineExtrSync(
   return readFileLineSync(filename).slice(start - 1, stop);
 }
 
-export function readFileLine(filename: string): Promise<string[]> {
+export async function readFileLine(filename: string): Promise<string[]> {
   return readFileStr(filename).then((content) => content.split("\n"));
 }
 
-export function fileLineExtr(
+export async function fileLineExtr(
   filename: string,
   start: number,
   stop: number,

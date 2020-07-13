@@ -7,8 +7,9 @@ import { getLineMarkers } from "./handleArg.ts";
 Deno.test("getLineMarkers Test", () => {
   assertEquals(getLineMarkers("1:3"), [1, 3]);
   assertEquals(getLineMarkers("1:"), [1, -1]);
-  assertEquals(getLineMarkers(":2"), [0, 2]);
+  assertEquals(getLineMarkers(":2"), [1, 2]);
+  assertEquals(getLineMarkers("1"), [1, 1]);
   assertThrows((): void => {
-    assertEquals(getLineMarkers("1"), "Error getting line marker: 1");
+    assertEquals(getLineMarkers("Hi"), "Error getting line marker: 1");
   });
 });
