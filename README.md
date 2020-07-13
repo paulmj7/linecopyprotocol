@@ -1,6 +1,6 @@
 # Line Copy Protocol (LCP)
 
-![.github/workflows/deno.yml](https://github.com/paulmj7/linecopyprotocol/workflows/.github/workflows/deno.yml/badge.svg)
+![LCP](https://github.com/paulmj7/linecopyprotocol/workflows/LCP/badge.svg)
 
 Easily copy and paste lines of data from one file to another. Built on top of Deno.
 
