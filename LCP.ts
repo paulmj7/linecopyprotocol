@@ -3,7 +3,6 @@ import { lineCopyProtocolSync } from "./src/lineCopyProtocol.ts";
 import { checkLCPArgs } from "./src/handleArg.ts";
 
 const args = Deno.args;
-console.log(1)
 if (args.length === 0) {
   console.log("Line Copy Protocol -- Prerelease");
   console.log("`lcp help` for help");
