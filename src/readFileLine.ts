@@ -1,7 +1,7 @@
 import {
   readFileStrSync,
   readFileStr,
-} from "https://deno.land/std/fs/read_file_str.ts";
+} from "https://deno.land/std@0.61.0/fs/read_file_str.ts";
 
 export function readFileLineSync(filename: string): string[] {
   return readFileStrSync(filename).split("\n");

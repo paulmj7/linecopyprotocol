@@ -1,7 +1,7 @@
 import {
   writeFileStrSync,
   writeFileStr,
-} from "https://deno.land/std/fs/write_file_str.ts";
+} from "https://deno.land/std@0.61.0/fs/write_file_str.ts";
 
 export function writeFileLineSync(filename: string, lines: string[]) {
   const content = concatNullTerminator(lines);
