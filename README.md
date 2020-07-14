@@ -8,7 +8,7 @@ Easily copy and paste lines of data from one file to another. Built on top of De
 
 Install with deno
 ```bash
-deno install --allow-read --allow-write -n lcp http://deno.land/x/linecopyprotocol/LCP.ts
+deno install --unstable --allow-read --allow-write -n lcp http://deno.land/x/linecopyprotocol/LCP.ts
 ```
 
 Or build from source
@@ -19,7 +19,7 @@ chmod +x LCP.ts
 Run
 ```bash
 ./LCP.ts file1 1:2 file2 2:4
-# or deno run --allow-read --allow-write LCP.ts file1 1:2 file2 2:4
+# or deno run --unstable --allow-read --allow-write LCP.ts file1 1:2 file2 2:4
 ```
 
 Import into your project with
