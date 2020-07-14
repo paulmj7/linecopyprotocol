@@ -8,7 +8,7 @@ Easily copy and paste lines of data from one file to another. Built on top of De
 
 Install with deno
 ```bash
-deno install --allow-read --allow-write -n lcp http://deno.land/x/linecopyprotocol/src/lineCopyProtocol.ts
+deno install --allow-read --allow-write -n lcp http://deno.land/x/linecopyprotocol/LCP.ts
 ```
 
 Or build from source
