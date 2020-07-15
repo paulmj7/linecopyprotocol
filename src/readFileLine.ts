@@ -12,7 +12,7 @@ export function fileLineExtrSync(
   start: number,
   stop: number,
 ): string[] {
-  return readFileLineSync(filename).slice(start - 1, stop);
+  return readFileLineSync(filename).slice(start, stop);
 }
 
 export async function readFileLine(filename: string): Promise<string[]> {
@@ -24,5 +24,5 @@ export async function fileLineExtr(
   start: number,
   stop: number,
 ): Promise<string[]> {
-  return readFileLine(filename).then((lines) => lines.slice(start - 1, stop));
+  return readFileLine(filename).then((lines) => lines.slice(start, stop));
 }

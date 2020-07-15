@@ -20,7 +20,7 @@ export function lineCopyProtocolSync(
   // Assume m2 is singular ex "1" instead of "1:2"
   let del = 0;
   if (m2[0] !== m2[1]) {
-    del = m2[1] - m2[0];
+    del = (m2[1] - m2[0]) - (m1[1] - m1[0]);
   }
   f2.splice(m2[0], del, ...f1);
   writeFileLineSync(file2, f2);
@@ -38,7 +38,7 @@ export async function lineCopyProtocol(
   const f2 = await readFileLine(file2);
   let del = 0;
   if (m2[0] !== m2[1]) {
-    del = m2[1] - m2[0];
+    del = m2[1] - m1[1];
   }
   f2.splice(m2[0], del, ...f1);
   writeFileLine(file2, f2);

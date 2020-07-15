@@ -14,7 +14,7 @@ export async function writeFileLine(filename: string, lines: string[]) {
 }
 
 function concatNullTerminator(lines: string[]) {
-  for (let i = 0; i < lines.length; i++) {
+  for (let i = 0; i < lines.length - 1; i++) {
     lines[i] += "\n";
   }
   return lines;
