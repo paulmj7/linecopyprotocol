@@ -19,7 +19,7 @@ export function lineCopyProtocolSync(
   const f2 = readFileLineSync(file2);
   // Assume m2 is singular ex "1" instead of "1:2"
   let del = 0;
-  if (m2[0] !== m2[1]) {
+  if ((m2[0] + 1) !== m2[1]) {
     del = (m2[1] - m2[0]) - (m1[1] - m1[0]);
   }
   f2.splice(m2[0], del, ...f1);
