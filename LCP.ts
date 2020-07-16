@@ -17,7 +17,7 @@ try {
     );
     console.log("Ex: lcp test1.txt 1:3 test2.txt 1");
     console.log(
-      "Explaination: Copy lines 1 through 3 of test1.txt into test2.txt starting at line 1",
+      "Explanation: Copy lines 1 through 3 of test1.txt into test2.txt starting at line 1",
     );
     console.log(
       "For more information: https://github.com/paulmj7/linecopyprotocol",

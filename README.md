@@ -34,7 +34,7 @@ deno install --unstable --allow-read --allow-write -n lcp http://deno.land/x/lin
 And lcp will be installed!
 ```bash
 lcp
-# Line Copy Protocol -- Prerelease
+# Line Copy Protocol -- v0.9.9
 # `lcp help` for help
 # Happy hacking!
 ```
@@ -54,4 +54,4 @@ import { lineCopyProtocol } from "https://deno.land/x/linecopyprotocol/src/lineC
 
 ## Disclaimer
 
-This is a small tool I worked up while learning Deno. The technical specifications are open for contributions and ideas. For ideas and suggestions please open an issue. For pull requests please update tests as necessary.
+This is a small tool I worked up while learning Deno. The technical specifications are open to contributions and ideas. For ideas and suggestions please open an issue. For pull requests please update tests as necessary.
