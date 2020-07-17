@@ -7,6 +7,7 @@ Easily copy and paste lines of data from one file to another. Built on top of De
 ## Usage
 
 ```bash
+# Syntax: lcp <filename> <lines> <filename> <line>
 # Syntax: lcp <filename> <lines> <filename> <lines>
 
 lcp test1.txt 1:3 test2.txt 1:3
@@ -34,7 +35,7 @@ deno install --unstable --allow-read --allow-write -n lcp http://deno.land/x/lin
 And lcp will be installed!
 ```bash
 lcp
-# Line Copy Protocol -- v0.9.9
+# Line Copy Protocol
 # `lcp help` for help
 # Happy hacking!
 ```
