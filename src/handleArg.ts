@@ -2,10 +2,12 @@ import { existsSync } from "https://deno.land/std@0.61.0/fs/mod.ts";
 
 export function getLineMarkers(arg: string): number[] {
   if (arg[0] === "0" || arg[0] < "1") {
-    throw new Error("Invalid line marker: cannot start with or be 0");
+    console.log("Invalid line marker: cannot start with or be 0");
+    Deno.exit(1);
   }
   if (!Number(arg.replace(":", ""))) {
-    throw new Error("Invalid line marker: must be a number or number range");
+    console.log("Invalid line marker: must be a number or number range");
+    Deno.exit(1);
   }
 
   if (arg.includes(":")) {
@@ -24,7 +26,8 @@ export function getLineMarkers(arg: string): number[] {
     return [Number(arg[0]) - 1, Number(arg[0])];
   }
 
-  throw new Error("Error getting line marker: " + arg);
+  console.log("Error getting line marker: " + arg);
+  Deno.exit(1);
 }
 
 export function checkLCPArgs(args: string[]): boolean {
@@ -38,7 +41,8 @@ export function checkLCPArgs(args: string[]): boolean {
   }
   if (!existsSync(args[2])) {
     console.log("File does not exist: " + args[2]);
-    return false;
+    console.log(`Creating new file: ${args[2]}`);
+    Deno.writeTextFileSync(args[2], "");
   }
   if (!isValidLineMarker(args[1])) {
     console.log("Invalid line marker: " + args[1]);

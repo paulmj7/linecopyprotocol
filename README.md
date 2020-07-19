@@ -2,7 +2,7 @@
 
 ![LCP](https://github.com/paulmj7/linecopyprotocol/workflows/LCP/badge.svg)
 
-Easily copy and paste lines of data from one file to another. Built on top of Deno.
+Easily copy, paste, and delete lines of data from one file to another. Built on top of Deno.
 
 ## Usage
 
