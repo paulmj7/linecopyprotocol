@@ -20,18 +20,6 @@ Deno.test("getLineMarkers Single Line", () => {
   assertEquals(getLineMarkers("1"), [0, 1]);
 });
 
-Deno.test("getLineMarkers String Input", () => {
-  assertThrows((): void => {
-    getLineMarkers("Hi");
-  });
-});
-
-Deno.test("getLineMarkers String Input Range", () => {
-  assertThrows((): void => {
-    getLineMarkers("Hello:World");
-  });
-});
-
 Deno.test("isValidLineMarker Single Line", () => {
   assertEquals(isValidLineMarker("1"), true);
 });
