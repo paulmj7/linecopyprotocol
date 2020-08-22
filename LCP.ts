@@ -2,7 +2,7 @@
 import { lineCopyProtocolSync } from "./src/lineCopyProtocol.ts";
 import { checkLCPArgs } from "./src/handleArg.ts";
 
-const version = "v1.0.0";
+const version = "v1.0.1";
 
 try {
   const args = Deno.args;
