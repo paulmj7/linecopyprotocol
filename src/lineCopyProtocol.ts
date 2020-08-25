@@ -37,7 +37,7 @@ export async function lineCopyProtocol(
   const f1 = await fileLineExtr(file1, m1[0], m1[1]);
   const f2 = await readFileLine(file2);
   let del = 0;
-  if (m2[0] !== m2[1]) {
+  if ((m2[0] + 1) !== m2[1]) {
     del = m2[1] - m2[0];
   }
   f2.splice(m2[0], del, ...f1);

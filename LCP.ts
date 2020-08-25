@@ -1,5 +1,5 @@
 #!/usr/bin/env deno run --allow-read --allow-write --unstable
-import { lineCopyProtocolSync } from "./src/lineCopyProtocol.ts";
+import { lineCopyProtocol } from "./src/lineCopyProtocol.ts";
 import { checkLCPArgs } from "./src/handleArg.ts";
 
 const version = "v1.0.1";
@@ -25,7 +25,7 @@ try {
   } else if (!checkLCPArgs(args)) {
     console.log("Invalid usage: please refer to `lcp help`");
   } else {
-    lineCopyProtocolSync(args[0], args[1], args[2], args[3]);
+    lineCopyProtocol(args[0], args[1], args[2], args[3]);
   }
 } catch (err) {
   console.log(err);
